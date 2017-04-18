@@ -1,0 +1,13 @@
+package plan.controller;
+
+import java.util.Calendar;
+
+public class User {
+String userID;
+String password;
+Calendar birthday;
+String email;
+String firstName;
+String lastName;
+	
+}

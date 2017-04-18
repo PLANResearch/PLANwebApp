@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Tag Libraries for BootsFace and JSF-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:b="http://bootsfaces.net/ui" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Login</title>
+<script>
+	function doSomething(){
+	};
+</script>
+</head>
+<body>
+<h:form prependId="false">
+<b:container layout="fluid">
+  <b:row>
+    <b:column medium-screen="2">
+      <b:label text="Username:"/>
+    </b:column>
+    <b:column medium-screen="4">
+      <b:inputText id="userID"   value="#{testLoginBean.userID}" />
+    </b:column>
+    <b:column medium-screen="6">
+      <h:message for="userID"/>
+    </b:column>
+  </b:row>
+  <b:row>
+    <b:column medium-screen="2">
+      <b:label text="Password:" />
+    </b:column>
+    <b:column medium-screen="4">
+      <b:inputSecret  id="password" value="#{testLoginBean.password}" />
+    </b:column>
+    <b:column medium-screen="6">
+      <h:message for="password"/>
+    </b:column>
+  </b:row>
+  <b:row>
+    <b:column span="2" offset="2">
+      <b:commandButton value="Log In" look="primary" style="width:100%" actionListener="#{testLoginBean.logIn}"/>
+    </b:column>
+  </b:row>
+</b:container>
+</h:form>
+</body>
+</html>

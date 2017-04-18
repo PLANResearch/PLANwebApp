@@ -1,0 +1,9 @@
+package plan.controller;
+
+public class AlreadyLoggedInBean {
+	public AlreadyLoggedInBean() {
+		
+	}
+	
+
+}
